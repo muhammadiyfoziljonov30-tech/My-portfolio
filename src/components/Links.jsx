@@ -5,7 +5,7 @@ import ContactDesigned from "./UI/ContactDesigned";
 export default function Links() {
   return (
     <div className="flex items-center justify-between mt-5">
-      <div>
+      <div className="text-white">
         logo
       </div>
       <div className="flex flex-col items-end">

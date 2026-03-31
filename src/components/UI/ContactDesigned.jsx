@@ -1,4 +1,5 @@
 import { FiArrowDownRight } from "react-icons/fi";
+import { motion } from "motion/react";
 
 export default function ContactDesigned() {
   return (
@@ -6,9 +7,9 @@ export default function ContactDesigned() {
         <div className="text-white">
           Contact
         </div>
-             <div className="p-2 bg-white rounded-full">
+             <motion.div whileHover={{rotate: '-45deg'}} className="p-2 bg-white rounded-full">
               <FiArrowDownRight size={20}/>
-             </div>
+             </motion.div>
     </div>
   )
 }
