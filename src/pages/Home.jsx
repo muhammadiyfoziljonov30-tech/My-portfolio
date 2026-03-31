@@ -1,7 +1,7 @@
 import { easeInOut, motion } from "motion/react"
 export default function Home() {
   return (
-    <section className="min-h-screen bg-[url('./Galaxy.png')] bg-cover bg-center">
+    <section className="bg-black">
       <div className="container flex items-center justify-between">
         <div className="border border-0.5 border-white rounded-2xl">
           <div className="border-b bg-white-20 hover:backdrop-blur text-white rounded-2xl">
