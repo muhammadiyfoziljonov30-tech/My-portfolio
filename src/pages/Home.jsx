@@ -1,36 +1,23 @@
-import { easeInOut, motion } from "motion/react"
+
 export default function Home() {
   return (
-    <section className="bg-black">
-      <div className="container flex items-center justify-between">
-        <div className="border border-0.5 border-white rounded-2xl">
-          <div className="border-b bg-white-20 hover:backdrop-blur text-white rounded-2xl">
-            <motion.h1 initial={{ opacity: 0 }}
-              animate={{ opacity: 10 }}
-              transition={{ duration: 0.5 }}
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-
-              className="text-5xl my-font py-20 pl-20 cursor-pointer">Assalamu Alaykum!</motion.h1>
+    <section className="bg-[#0A0F1C]">
+      <div className="bg-grid container border-l border-l-gray-700 border-l-0.5 border-r border-r-gray-700 border-r-0.5 flex items-center justify-between relative pt-10">
+        <div className="pl-10 py-50">
+          <div>
+            <p className="text-green font-semibold text-3xl">
+              Assalamu Alaykum! 
+            </p>
+            <h1 className="text-white text-9xl font-bold mt-5">
+              I'm <br /> <span className="text-green">Muhammadiy.</span>
+            </h1>
           </div>
-          <motion.p initial={{ x: 30, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 2 }}
-            className="text-xl mt-10 max-w-140 text-white p-5">
-            You've arrived at the portfolio of <span className="font-bold">Muhammadiy</span> - a full stack freelance designer, creative developer and strategist based in Andijan, Uzbekistan.
-            Feel free to explore my work and a few of my favourite things!
-          </motion.p>
+          <div className="mt-10">
+            <p className="text-[#6B7280] max-w-130 text-2xl my-font">Full-stack software developer crafting fast, reliable, and scalable systems. I turn complex problems into clean, maintainable code.</p>
+          </div>
         </div>
-        <motion.div animate={{ y: [0, -20, 0] }}
-          transition={{
-            duration: 5,   
-            repeat: Infinity,   
-            repeatType: "loop",   
-            ease: "easeInOut"  
-          }}
-          className="max-w-150 mt-40 ">
-          <img src="./Man.jpg" alt="img" className="rounded-full"/>
-        </motion.div>
+        <div className="p-100 bg-[#053021] rounded-full blur-[120px] opacity-40 outline-none absolute right-0 top-20">
+        </div>
       </div>
     </section>
   )

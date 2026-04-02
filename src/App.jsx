@@ -1,12 +1,12 @@
 import { Route, Routes } from "react-router";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Work from "./pages/Work";
 import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import NotFound from "./pages/NotFound";
-import Process from "./pages/Process";
+import Project from "./pages/Project";
+import Skills from "./pages/Skills";
 
 export default function App() {
   return (
@@ -15,8 +15,8 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/about" element={<About/>}/>
-        <Route path="/work" element={<Work/>}/>
-        <Route path="/process" element={<Process/>}/>
+        <Route path="/projects" element={<Project/>}/>
+        <Route path="/skills" element={<Skills/>}/>
         <Route path="/contact" element={<Contact/>}/>
         <Route path="*" element={<NotFound/>}/>
       </Routes>
