@@ -1,7 +1,7 @@
 
-export default function Skills() {
+export default function Projects() {
   return (
-    <section id="skills">
+    <section id="projects">
       <div className="container mt-25 flex items-center justify-between">
         <div className="max-w-100 text-center">
           <h1 className="text-7xl">HEY!</h1>
