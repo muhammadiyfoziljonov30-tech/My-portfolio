@@ -84,13 +84,13 @@ export default function About() {
             </motion.div>
           </div>
 
-          <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+          <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 ">
             {about.map((item) => (
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, ease: 'easeInOut', delay: item.id * 0.5 }}
-                key={item.id} className="bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col items-center justify-center hover:shadow-green hover:bg-gray-700 transition duration-300">
+                key={item.id} className="bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col items-center justify-center hover:shadow-green hover:bg-gray-700 transition duration-300 cursor-pointer">
                 <h2 className="text-4xl font-bold text-white">{item.num}</h2>
                 <p className="text-gray-400 mt-2 mono-font">{item.title}</p>
               </motion.div>
