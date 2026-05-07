@@ -1,15 +1,20 @@
+import { motion } from "framer-motion";
+import SkillBox from "../components/SkillBox";
 
 export default function Skills() {
   return (
     <section id="skills">
-      <div className="container mt-25 flex items-center justify-between">
-        <div className="max-w-100 text-center">
-          <h1 className="text-7xl">HEY!</h1>
-          <p className="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores illo magni impedit sapiente? Voluptates quisquam, sint cupiditate porro laboriosam enim commodi! Tempora, molestiae est quasi voluptates eum veritatis consequuntur officiis?
-          </p>
-        </div>
-        <div className="max-w-200">
-          <img src="./image.png" alt="img" />
+      <div className="container">
+        <motion.h1
+          initial={{ y: -30, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 1.5, ease: 'easeInOut' }}
+          className="text-white text-7xl sekuya-font text-center my-10"
+        >
+          Skills
+        </motion.h1>
+        <div>
+          <SkillBox />
         </div>
       </div>
     </section>

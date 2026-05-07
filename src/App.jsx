@@ -1,37 +1,40 @@
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Contact from "./pages/Contact";
+// import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Project from "./pages/Projects";
 import Skills from "./pages/Skills";
+// import CustomCursor from "./components/CustomCursor";
 
 export default function App() {
   return (
     <>
-    <Navbar/>
+
+      <Navbar />
+      {/* <CustomCursor /> */}
       <main>
         <section id="home">
-          <Home/>
+          <Home />
         </section>
 
         <section id="about">
-          <About/>
+          <About />
         </section>
 
         <section id="project">
-          <Project/>
+          <Project />
         </section>
 
         <section id="skills">
-          <Skills/>
+          <Skills />
         </section>
 
-        <section id="contact">
-          <Contact/>
-        </section>
+        {/* <section id="contact">
+          <Contact />
+        </section> */}
       </main>
-      <Footer/>
+      <Footer />
     </>
   )
 }

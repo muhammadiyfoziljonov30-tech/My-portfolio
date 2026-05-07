@@ -47,6 +47,42 @@ body{
   background-size: 40px 40px; /* setka o‘lchami */
 }
 
+/* * {
+  cursor: none !important;
+}
+
+/* Linklar yoki tugmalar ustiga borganda ko'rinishi uchun (ixtiyoriy) */
+/* a, button {
+  cursor: none;
+/* } */
+
+.nav-link {
+  position: relative;
+  text-decoration: none;
+  color: black;
+  padding-bottom: 10px;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0); /* Boshida chiziq ko'rinmaydi */
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-green); /* Chiziq rangi */
+  transform-origin: bottom right; /* O'ngga qarab yo'qolishi uchun */
+  transition: transform 1s ease-out;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1); /* Hover bo'lganda to'liq chiqadi */
+  transform-origin: bottom left; /* Chapdan chiqishi uchun */
+}
+
+
+
 @theme{
   --color-green: #00F5A0;
 }
